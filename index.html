@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Heartfelt Proposal 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #fbd0d8);
+      color: #880e4f;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #d81b60;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+    .btn {
+      font-size: 1.2em;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      margin: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-yes {
+      background: #ffd700;
+      color: #333;
+    }
+    .btn-no {
+      background: #ec407a;
+      color: white;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>This is from the heart 💌</h1>
+    <p>
+      I've been holding these words inside for a long time. From the moment we became close,
+      my world started to feel warmer, my days a little brighter, and my smile a lot more real.<br><br>
+      You're kind, you're amazing, and your presence makes everything better. I cherish our moments
+      and I dream of many more... with you.<br><br>
+      So here I am, taking a deep breath and asking:
+    </p>
+    <h1>Will you be my girlfriend? 💖</h1>
+
+    <form action="https://formsubmit.co/tanishmodi2009@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="She said YES! 💍">
+      <input type="hidden" name="response" value="YES">
+      <button class="btn btn-yes" type="submit">Yes 🌹</button>
+    </form>
+
+    <button class="btn btn-no" onclick="handleNo()">No 😢</button>
+  </div>
+
+  <script>
+    function handleNo() {
+      fetch("https://formsubmit.co/ajax/tanishmodi2009@gmail.com", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          _subject: "She clicked NO 😢",
+          response: "NO"
+        })
+      }).then(() => {
+        window.location.href = "reason.html";
+      });
+    }
+  </script>
+</body>
+</html>

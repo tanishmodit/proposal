@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wait, Really? 😔</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #fff1f9, #ffd6e8);
+      color: #880e4f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .box {
+      max-width: 600px;
+      text-align: center;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      background: #ff4081;
+      color: white;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Wait... Really? 😢</h1>
+    <p>I just want to understand. Can you tell me why you said no?</p>
+    <form action="https://formsubmit.co/tanishmodi2009@gmail.com" method="POST" onsubmit="setTimeout(() => window.location.href='justkidding.html', 500)">
+      <textarea name="reason" placeholder="Be honest, I can take it 💔" required></textarea>
+      <input type="hidden" name="_subject" value="Reason she said no 😞">
+      <input type="hidden" name="response" value="No Reason Submitted">
+      <button class="btn" type="submit">Send Reason 💌</button>
+    </form>
+  </div>
+</body>
+</html>
